@@ -285,7 +285,10 @@ module.exports = function (grunt) {
             all: {
                 rjsConfig: '<%= yeoman.app %>/scripts/main.js',
                 options: {
-                    transitive: true
+                    baseUrl: './',
+                    transitive: true,
+                    exclude: [], //eg: exclude: ['modernizr', 'sass-bootstrap', 'qtip2']
+                    'exclude-dev': true
                 }
             }
         }
